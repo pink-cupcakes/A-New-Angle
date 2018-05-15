@@ -9,6 +9,3 @@ To start your application you need to clone this repository here: https://github
 
 `npm install`
 This pulls all the dependencies from package.json and installs them.
-
-`npm start`
-If all the packages and modules installed successfully, you can see the application at http://localhost:3000.
