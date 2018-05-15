@@ -7,7 +7,8 @@ Welcome to Form - a new angle. We have enjoyed the benefits of living in the Inf
 
 To start your application you need to clone this repository here: https://github.com/pinkwaffles/A-New-Angle. Then simply run:
 
-`npm install
-npm start`
+`npm install`
+This pulls all the dependencies from package.json and installs them.
 
+`npm start`
 If all the packages and modules installed successfully, you can see the application at http://localhost:3000.
