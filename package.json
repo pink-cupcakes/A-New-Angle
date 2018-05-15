@@ -1,0 +1,24 @@
+{
+  "name": "workspan",
+  "version": "1.0.0",
+  "description": "## Introdution Welcome to Form - a new angle. We have enjoyed the benefits of living in the Information Age, but sometimes that presents another problem - too much information. At Form, we believe that human responses will always be specifically tailored to our situation and easier to understand. So take a spin - take a look at questions our community has asked. You can get involved with the community by answering posts or upvoting questions which helped you or you just thought were funny!",
+  "main": "index.js",
+  "dependencies": {
+    "angular": "^1.7.0",
+    "lodash": "^4.17.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pinkwaffles/A-New-Angle.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pinkwaffles/A-New-Angle/issues"
+  },
+  "homepage": "https://github.com/pinkwaffles/A-New-Angle#readme"
+}
