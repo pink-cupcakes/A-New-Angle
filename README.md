@@ -5,7 +5,11 @@ Welcome to Form - a new angle. We have enjoyed the benefits of living in the Inf
 
 ## Getting started
 
-To start your application you need to clone this repository here: https://github.com/pinkwaffles/A-New-Angle. Then simply run:
+To start your application you need to clone this repository here:
+https://github.com/pinkwaffles/A-New-Angle
+
+Then run the following in your terminal:
 
 `npm install`
+
 This pulls all the dependencies from package.json and installs them.
