@@ -1,2 +1,13 @@
 # Forum---a-new-angle
-Don't know something? We've all been there - ask away here using this nifty forum powered by AngularJS!
+
+## Introdution
+Welcome to Form - a new angle. We have enjoyed the benefits of living in the Information Age, but sometimes that presents another problem - too much information. At Form, we believe that human responses will always be specifically tailored to our situation and easier to understand. So take a spin - take a look at questions our community has asked. You can get involved with the community by answering posts or upvoting questions which helped you or you just thought were funny!
+
+## Getting started
+
+To start your application you need to clone this repository here: https://github.com/pinkwaffles/A-New-Angle. Then simply run:
+
+`npm install
+npm start`
+
+If all the packages and modules installed successfully, you can see the application at http://localhost:3000.
