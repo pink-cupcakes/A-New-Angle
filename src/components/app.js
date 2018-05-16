@@ -9,7 +9,8 @@ angular.module('forum')
                 text: questionObj.Text,
                 downvotes: questionObj.downvotes,
                 upvotes: questionObj.upvotes,
-                answers: []
+                answers: [],
+                bookmarked: false
             };
         });
         this.currentQuestion;
@@ -26,7 +27,7 @@ angular.module('forum')
     }
 
     this.selectQuestion = (questionID) => {
-        this.currentQuestion = this.questions[questionID];
+        this.currentQuestion = this.questionSet[questionID];
     };
 
     apiQuery.search('https://api.myjson.com/bins/dck5b', this.processQuestions);
