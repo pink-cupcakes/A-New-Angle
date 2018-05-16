@@ -12,6 +12,8 @@ Requirements:
 - git version >= 2.7.1
 - npm >= 5.6.0
 
+---
+
 Instructions:
 
 1. Clone this repo:
