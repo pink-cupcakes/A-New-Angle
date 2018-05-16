@@ -19,6 +19,7 @@ https://github.com/pinkwaffles/A-New-Angle
 - If you wish to access a dev environment, run the following in your terminal:
 
     `npm install -g live-server`
+    
     `live-server`
 
     This will automatically open a dev environment in which you can see changes to the code being updated live. It servers the same function as nodemon would in node.
