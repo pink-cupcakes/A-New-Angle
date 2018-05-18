@@ -1,3 +1,8 @@
-<div id="app container">
-    Questions will go here
+<div id="app container" class="container">
+    <div class="questionList">
+        <question-entry
+            ng-repeat="question in $ctrl.questionSet"
+            question="question"
+        />
+    </div>
 </div>

@@ -1,0 +1,21 @@
+<div class="mdl-card">
+    <div class="mdl-card__title">
+        <h5>{{$ctrl.question.text}}</h5>
+    </div>
+    <div class="mdl-card__supporting-text content">
+        <ol>
+            <li ng-repeat="answer in $ctrl.question.answers">
+                <p class="answer">{{answer.Answer}}</p>
+                <div class="content_bar">
+                    <p class="bookmark">{{answer.bookmarked}}</p>
+                    <div class="vote_content">
+                        <i class="fas fa-thumbs-up vote_up"></i>
+                        <i class="fas fa-thumbs-down vote_down"></i>
+                        <p class="votes">{{answer.upvotes - answer.downvotes}}</p>
+                    </div>
+                </div>
+            </li>
+        </ol>
+    </div>
+    <input type="text" value="answer"/>
+</div>
