@@ -3,6 +3,10 @@
         <question-entry
             ng-repeat="question in $ctrl.questionSet"
             question="question"
+            question-id="$index"
+            add="$ctrl.addComment"
+            vote-up="$ctrl.voteUp"
+            vote-down="$ctrl.voteDown"
         />
     </div>
 </div>

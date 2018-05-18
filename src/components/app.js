@@ -8,26 +8,48 @@ angular.module('forum')
         data.feed_questions.forEach((questionObj) => {
             this.questions[questionObj.Id] = {
                 text: questionObj.Text,
-                downvotes: questionObj.downvotes,
-                upvotes: questionObj.upvotes,
+                downvotes: parseInt(questionObj.downvotes) || 0,
+                upvotes: parseInt(questionObj.upvotes) || 0,
                 answers: [],
                 bookmarked: false
             };
             this.questionSet.push(questionObj.Id);
         });
-        console.log(this.questions);
     };
 
     this.processAnswers = (data) => {
         data.feed_answers.forEach((answerObj) => {
             let qID = answerObj['Question-Id'];
             delete answerObj['Question-Id'];
+            answerObj.upvotes = parseInt(answerObj.upvotes) || 0;
+            answerObj.downvotes = parseInt(answerObj.downvotes) || 0;
             this.questions[qID].answers.push(answerObj);
         });
         this.questionSet = this.questionSet.map((id) => {
             return this.questions[id];
         });
-        console.log(this.questionSet);
+    };
+
+    this.addComment = (questionID, message) => {
+        let answerSet = this.questionSet[questionID].answers;
+        let contents = {
+            Answer: message,
+            Id: 'A-' + answerSet.length,
+            created_at: new Date().toLocaleString,
+            created_by: "Anonymous",
+            downvotes: 0,
+            upvotes: 0
+        };
+        answerSet.push(contents);
+    };
+
+    this.voteUp = (questionID, answerID) => {
+        this.questionSet[questionID].answers[answerID].upvotes += 1;
+        console.log(this.questionSet[questionID])
+    };
+
+    this.voteDown = (questionID, answerID) => {
+        this.questionSet[questionID].answers[answerID].downvotes += 1;
     };
 
     apiQuery.search('https://api.myjson.com/bins/dck5b', this.processQuestions);

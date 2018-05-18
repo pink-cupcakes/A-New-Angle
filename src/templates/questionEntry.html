@@ -1,4 +1,5 @@
 <div class="mdl-card">
+    <div class="bookmark">{{answer.bookmarked}}</div>
     <div class="mdl-card__title">
         <h5>{{$ctrl.question.text}}</h5>
     </div>
@@ -7,15 +8,17 @@
             <li ng-repeat="answer in $ctrl.question.answers">
                 <p class="answer">{{answer.Answer}}</p>
                 <div class="content_bar">
-                    <p class="bookmark">{{answer.bookmarked}}</p>
                     <div class="vote_content">
-                        <i class="fas fa-thumbs-up vote_up"></i>
-                        <i class="fas fa-thumbs-down vote_down"></i>
+                        <span ng-click="$ctrl.voteUp($ctrl.questionId, $index)"><i class="fas fa-thumbs-up vote_up"></i></span>
+                        <span ng-click="$ctrl.voteDown($ctrl.questionId, $index)"><i class="fas fa-thumbs-down vote_down"></i></span>
                         <p class="votes">{{answer.upvotes - answer.downvotes}}</p>
                     </div>
                 </div>
             </li>
         </ol>
     </div>
-    <input type="text" value="answer"/>
+    <div class="newComment">
+        <input class="addComment" ng-model="$ctrl.input" type="text" value="Enter your answer here."/>
+        <button class="button_addComment" ng-click="$ctrl.handleClick()">Add</button>
+    </div>
 </div>
