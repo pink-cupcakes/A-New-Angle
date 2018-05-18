@@ -33,7 +33,6 @@ angular.module('forum')
     this.bookmark = (questionID) => {
         let flagged = !this.questionSet[questionID].bookmarked;
         this.questionSet[questionID].bookmarked = flagged;
-        console.log(this.questionSet[questionID]);
     }
 
     this.addComment = (questionID, message) => {
@@ -51,7 +50,6 @@ angular.module('forum')
 
     this.voteUp = (questionID, answerID) => {
         this.questionSet[questionID].answers[answerID].upvotes += 1;
-        console.log(this.questionSet[questionID])
     };
 
     this.voteDown = (questionID, answerID) => {
