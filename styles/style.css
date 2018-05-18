@@ -5,7 +5,8 @@
     flex-wrap: wrap;
     -webkit-align-content: center;
     align-content: center;
-    max-width: 800px !important;
+    max-width: 900px !important;
+    margin-bottom: 40px;
 }
 
 .title {
@@ -19,19 +20,26 @@
     width: 100% !important;
 }
 
-/* .content {
-
-} */
+.question_title {
+    width: 80%;
+}
 
 .content {
     display: flex;
-    justify-content: space-between;
+    margin-left: 60px;
+    width: 80% !important;
 }
 
 .bookmark {
     float: left;
-    width: 8%;
-    margin: 0 !important;
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+}
+
+.solid {
+    width: 80%;
+    height: 80%;
 }
 
 .content_bar {
@@ -43,8 +51,7 @@
 }
 
 .answer {
-    width: 100%;
-    margin: 0 !important;
+    width: 600px;
     border: none !important;
 }
 
@@ -52,6 +59,8 @@
     width: 15%;
     display: flex;
     align-items: center;
+    margin-left: 85%;
+    margin-bottom: 15px;
     justify-content: space-between;    
 }
 
@@ -70,9 +79,9 @@
 }
 
 .addComment {
-    width: 80%;
+    width: 530px;
     border-radius: 5px;
-    margin-left: 55px;
+    margin-left: 115px;
     margin-right: 15px;
 }
 
@@ -96,4 +105,16 @@
  
  .button_addComment:active {
      background-color: #ccc;
+ }
+
+ .media {
+     display: flex;
+     align-content: center;
+     text-align: center;
+     justify-content: center;
+     margin-bottom: 25px;
+ }
+
+ .github_icon {
+    font-size: 45px;
  }

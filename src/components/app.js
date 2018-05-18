@@ -30,6 +30,12 @@ angular.module('forum')
         });
     };
 
+    this.bookmark = (questionID) => {
+        let flagged = !this.questionSet[questionID].bookmarked;
+        this.questionSet[questionID].bookmarked = flagged;
+        console.log(this.questionSet[questionID]);
+    }
+
     this.addComment = (questionID, message) => {
         let answerSet = this.questionSet[questionID].answers;
         let contents = {
