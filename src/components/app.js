@@ -1,6 +1,6 @@
 angular.module('forum')
 
-.controller('AppCtrl', function(apiQuery) {
+.controller('AppCtrl', function(apiQuery, $scope) {
     this.questionSet = [];
     //Initialize questions onload
     this.processQuestions = (data) => {
@@ -46,6 +46,7 @@ angular.module('forum')
             upvotes: 0
         };
         answerSet.push(contents);
+        console.log($scope)
     };
 
     this.voteUp = (questionID, answerID) => {
