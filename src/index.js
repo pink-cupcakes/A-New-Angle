@@ -1,4 +1,4 @@
-angular.module('forum', [])
+angular.module('forum', ['ngSanitize'])
 .config(function($sceDelegateProvider) {
   $sceDelegateProvider.resourceUrlWhitelist([
     'self',
