@@ -46,7 +46,6 @@ angular.module('forum')
             upvotes: 0
         };
         answerSet.push(contents);
-        console.log($scope)
     };
 
     this.voteUp = (questionID, answerID) => {
