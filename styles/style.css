@@ -21,7 +21,15 @@
 }
 
 .question_title {
-    width: 80%;
+    width: 600px;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow:hidden;
+    white-space:nowrap;
+}
+
+.active {
+    white-space: unset;
 }
 
 .content {
@@ -52,7 +60,7 @@
 }
 
 .answer {
-    width: 600px;
+    width: 90%;
     border: none !important;
 }
 
@@ -60,7 +68,7 @@
     width: 15%;
     display: flex;
     align-items: center;
-    margin-left: 85%;
+    margin-left: 72%;
     margin-bottom: 15px;
     justify-content: space-between;    
 }

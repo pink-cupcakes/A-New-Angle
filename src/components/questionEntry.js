@@ -1,6 +1,10 @@
 angular.module('forum')
 
 .controller('ProcessAnswer', function($scope) {
+    this.expandQuestion = () => {
+        document.getElementById(`questionID${this.questionId}`).classList.add('active');
+    };
+
     this.submitComment = (id, text) => {
         this.add(id, text);
         $scope.$ctrl.input = "";

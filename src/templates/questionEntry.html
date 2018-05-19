@@ -3,7 +3,7 @@
         <span class="bookmark" ng-click="$ctrl.bookmark($ctrl.questionId)">
             <img class="solid" src="{{$ctrl.question.bookmarked && 'https://cdn3.iconfinder.com/data/icons/inficons-set-2/512/star-ratings-512.png' || 'https://png.icons8.com/metro/1600/star.png'}}"></img>
         </span>
-        <h5 class="question_title" ng-bind-html="$ctrl.question.text"></h5>
+        <h5 id="questionID{{$ctrl.questionId}}" class="question_title" ng-click="$ctrl.expandQuestion()" ng-bind-html="$ctrl.question.text"></h5>
     </div>
     <div class="mdl-card__supporting-text content">
         <ol>
