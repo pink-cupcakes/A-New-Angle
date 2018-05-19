@@ -1,7 +1,7 @@
 # Forum: An angular view
 
 ## Introdution
-Welcome to Form - a new angle. :tada::tada: We have enjoyed the benefits of living in the Information Age, but sometimes that presents another problem - too much information. At Form, we believe that human responses will always be specifically tailored to our situation and easier to understand.
+Welcome to Forum - a new angle. :tada::tada: We have enjoyed the benefits of living in the Information Age, but sometimes that presents another problem - too much information. At Forum, we believe that human responses will always be specifically tailored to our situation and easier to understand.
 
 So take a spin - take a look at questions our community has asked. You can get involved with the community by answering posts or upvoting questions which helped you or you just thought were funny! :smiley:
 
