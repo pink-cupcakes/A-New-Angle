@@ -36,4 +36,4 @@ Instructions:
 
     `live-server`
 
-    This will automatically open a dev environment in which you can see changes to the code being updated live. It servers the same function as nodemon would in node.
+    This will automatically open a dev environment and provide live updates as changes are saved to the files.
